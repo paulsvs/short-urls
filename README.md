@@ -1,4 +1,4 @@
-##Short URLs
+## Short URLs
 Application is using in memory DB, schema is created during startup and all the data is lost on shutdown.
 User activity tracking is done by using cookies. Cookie is set on link creation and short link opening.
 As of writing this only cookie is used for identifying users and their actions.</p>
@@ -6,7 +6,7 @@ As of writing this only cookie is used for identifying users and their actions.<
 There are no time limits or any other rules protecting created URLs they can be overwritten by the next request.
 Additionally there is tracking for invalid/non existing short URLs. 
 
-##Application setup
+## Application setup
 This is an application for creating short URLs. Interaction happens through REST API. 
 To create a short url
 ````
@@ -23,7 +23,7 @@ curl -H 'Content-Type: application/json' -v localhost:8080/tracker/data
 Take a look at the test for more details.
 
 
-##Running
+## Running
 Requires Java 11.
 
 To create package run `./mvnw clean package`
